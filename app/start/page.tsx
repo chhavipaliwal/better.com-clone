@@ -21,11 +21,11 @@ export default function Start() {
 
       {/* Content */}
       <div className="mt-10 flex w-full max-w-2xl flex-col items-center p-8">
-        <div className="border-gray absolute inset-x-0 border-4">
-          <a className="flex h-12 w-12 items-center justify-center rounded-full border bg-gray-200">
-            <img src="image.png" alt="image" className="rounded-full" />
-          </a>
-        </div>
+        <div className="border-gray absolute inset-x-0 border-4"></div>
+        <a className="relative flex h-12 w-12 items-center justify-center rounded-full border bg-gray-200">
+          <img src="image.png" alt="image" className="rounded-full" />
+        </a>
+
         <h2 className="mt-4 text-5xl font-semibold">Hi, I'm Betsy!</h2>
         <p className="mt-2 text-5xl font-semibold">What can I help you with?</p>
         {/* Options */}
