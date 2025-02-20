@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss';
-import { heroui } from "@heroui/react";
+import { heroui } from '@heroui/react';
 
 const config = {
   content: [
@@ -7,10 +7,26 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}"
+    './node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     extend: {
+      colors: {
+        accent: {
+          '50': '#dfeee8',
+          '100': '#b3d7c8',
+          '200': '#86bfa8',
+          '300': '#59a788',
+          '400': '#2d9068',
+          '500': '#007848',
+          '600': '#00633b',
+          '700': '#004e2f',
+          '800': '#003922',
+          '900': '#002416',
+          foreground: '#fff',
+          DEFAULT: '#007848'
+        }
+      },
       keyframes: {
         'caret-blink': {
           '0%,70%,100%': { opacity: '1' },
@@ -29,19 +45,63 @@ const config = {
       themes: {
         light: {
           colors: {
-            primary: {
-              '50': '#eef9ef',
-              '100': '#d5f0d8',
-              '200': '#bde7c1',
-              '300': '#a4dfab',
-              '400': '#8cd694',
-              '500': '#73cd7d',
-              '600': '#5fa967',
-              '700': '#4b8551',
-              '800': '#37613b',
-              '900': '#233e26',
+            default: {
+              '50': '#fcfcfc',
+              '100': '#f8f9f8',
+              '200': '#f4f5f3',
+              '300': '#f0f1ef',
+              '400': '#eceeea',
+              '500': '#e8eae6',
+              '600': '#bfc1be',
+              '700': '#979896',
+              '800': '#6e6f6d',
+              '900': '#464645',
               foreground: '#000',
-              DEFAULT: '#73cd7d'
+              DEFAULT: '#e8eae6'
+            },
+            primary: {
+              '50': '#dfe8e6',
+              '100': '#b3c8c2',
+              '200': '#86a89e',
+              '300': '#59877a',
+              '400': '#2d6757',
+              '500': '#004733',
+              '600': '#003b2a',
+              '700': '#002e21',
+              '800': '#002218',
+              '900': '#00150f',
+              foreground: '#fff',
+              DEFAULT: '#004733'
+            },
+            secondary: {
+              '50': '#e3fbef',
+              '100': '#bcf6d9',
+              '200': '#95f0c2',
+              '300': '#6debac',
+              '400': '#46e595',
+              '500': '#1fe07f',
+              '600': '#1ab969',
+              '700': '#149253',
+              '800': '#0f6a3c',
+              '900': '#094326',
+              foreground: '#000',
+              DEFAULT: '#1fe07f'
+            },
+
+            background: '#FFFDFA',
+            foreground: {
+              '50': '#e4e5e4',
+              '100': '#bfbfbf',
+              '200': '#999a99',
+              '300': '#747574',
+              '400': '#4e504e',
+              '500': '#292b29',
+              '600': '#222322',
+              '700': '#1b1c1b',
+              '800': '#131413',
+              '900': '#0c0d0c',
+              foreground: '#fff',
+              DEFAULT: '#292b29'
             }
           }
         },
