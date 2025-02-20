@@ -1,8 +1,6 @@
-import Banner from '@/components/sections/homepage/banner';
 import React from 'react';
-import Image from 'next/image';
-import { Code, navbar } from '@heroui/react';
 import Start from './start/page';
+import Banner from '@/components/sections/homepage/banner';
 
 export default function Home() {
   return (
