@@ -290,6 +290,7 @@ const Navbar = ({ session }: { session: any }) => {
                             <Icon
                               icon="material-symbols:arrow-right-alt"
                               className="h-4 w-4 group-hover:flex"
+                              width={16}
                             />
                           }
                         >
