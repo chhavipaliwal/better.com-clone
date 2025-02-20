@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Code } from "@heroui/react";
+import { Code } from '@heroui/react';
 export default function Home() {
   return (
     <>
@@ -12,10 +12,6 @@ export default function Home() {
           alt="Platforms on Vercel"
           className="w-48"
         />
-        <h1>
-          Edit this page on 
-          <Code>app/home/page.tsx</Code>
-        </h1>
       </div>
     </>
   );
