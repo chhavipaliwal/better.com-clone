@@ -142,7 +142,10 @@ const Navbar = ({ session }: { session: any }) => {
                     ></path>
                   </svg>
                 </a>
-                <button className="rounded-base leading-body ease-universal disabled:text-interactiveForegroundMuted disabled:bg-interactiveMuted text-interactiveForegroundTertiary hover:bg-interactiveSecondary focus:bg-interactiveSecondary focus:shadow-accentBorderSecondary active:bg-interactiveSecondary px-base h-2xl inline-block w-auto select-none bg-transparent text-center text-base font-bold outline-none transition duration-300 focus:border-transparent focus:shadow-[0_0_0_4px_inset] disabled:shadow-none">
+                <button
+                  title="Button"
+                  className="rounded-base leading-body ease-universal disabled:text-interactiveForegroundMuted disabled:bg-interactiveMuted text-interactiveForegroundTertiary hover:bg-interactiveSecondary focus:bg-interactiveSecondary focus:shadow-accentBorderSecondary active:bg-interactiveSecondary px-base h-2xl inline-block w-auto select-none bg-transparent text-center text-base font-bold outline-none transition duration-300 focus:border-transparent focus:shadow-[0_0_0_4px_inset] disabled:shadow-none"
+                >
                   <div className="align-center flex justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -294,7 +297,7 @@ const Navbar = ({ session }: { session: any }) => {
                   <div className="w-fit whitespace-nowrap rounded-small bg-background px-10 py-7 text-foreground shadow-md">
                     Call us anytime at{' '}
                     <a
-                      className="hover:text-accent underline"
+                      className="underline hover:text-accent"
                       href="tel:4155238837"
                     >
                       415-523-8837
