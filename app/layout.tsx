@@ -5,6 +5,7 @@ import Sonner from '@/components/providers';
 import Navbar from '@/components/sections/navbar';
 import { Providers } from './providers';
 import { auth } from '@/auth';
+import Footer from '@/components/sections/footer';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -24,6 +25,7 @@ export default async function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="light">
             <Navbar session={session} />
             {children}
+            <Footer />
             <Sonner />
           </ThemeProvider>
         </Providers>
