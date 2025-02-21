@@ -3,7 +3,7 @@ export default function Video() {
     <div>
       <div className="gap-y-base m-auto flex max-w-screen-xl flex-col-reverse gap-x-40 px-20 pb-32 md:flex-row md:px-20">
         <div className="md:w-1/2">
-          <h2 className="leading-heading text-3xl font-semibold md:text-3xl">
+          <h2 className="text-3xl font-semibold md:text-3xl">
             The status quo is broken
           </h2>
           <p className="leading-body mt-6 max-w-[456px] text-start text-base font-normal text-gray-500">
