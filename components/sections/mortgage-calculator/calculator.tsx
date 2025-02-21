@@ -2,23 +2,12 @@
 import Input from '@/components/ui/input';
 import Select from '@/components/ui/select';
 import { Slider } from '@heroui/react';
+import { Icon } from '@iconify/react/dist/iconify.js';
 import { useFormik } from 'formik';
+import { useCalculator } from './context';
 
 export default function Calculator() {
-  const formik = useFormik({
-    initialValues: {
-      homePrice: 300000,
-      monthlyPayment: 2146,
-      downPayment: 60000,
-      downPaymentRatio: 20,
-      interestRate: 6.5,
-      loanLength: 30,
-      zipCode: ''
-    },
-    onSubmit: (values) => {
-      console.log(values);
-    }
-  });
+  const { formik } = useCalculator();
 
   return (
     <>
@@ -46,7 +35,7 @@ export default function Calculator() {
                     </label>
                     <div className="relative z-0 w-full text-lg md:text-[40px]">
                       <Input
-                        className="pt-3"
+                        className="max-w-48 pl-10 pt-3 md:max-w-none"
                         name="homePrice"
                         type="tel"
                         value={formik.values.homePrice}
@@ -78,7 +67,7 @@ export default function Calculator() {
                   </a>
                 </div>
               </div>
-              <div className="mx-lg mb-lg relative mb-8 mt-8 px-8">
+              <div className="mx-lg relative mb-8 mt-8 px-8">
                 <Slider
                   aria-label="home price"
                   defaultValue={formik.values.homePrice}
@@ -99,8 +88,8 @@ export default function Calculator() {
                   }}
                 />
               </div>
-              <div className="grid grid-cols-2 gap-20">
-                <div className="grid grid-cols-2 gap-4">
+              <div className="grid gap-4 lg:grid-cols-2 lg:gap-20">
+                <div className="grid gap-4 sm:grid-cols-2">
                   <div>
                     <Input
                       label="ZIP code"
@@ -135,7 +124,7 @@ export default function Calculator() {
                     </div>
                   </div>
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid gap-4 sm:grid-cols-2">
                   <div>
                     <Input
                       label="Interest rate"
@@ -165,28 +154,14 @@ export default function Calculator() {
             <div className="block md:hidden">
               <div>
                 <a
-                  className="inline-flex w-auto min-w-[220px] select-none items-center justify-center rounded-sm text-center text-base font-bold outline-none transition duration-300 focus:shadow-[0_0_0_4px_inset] disabled:shadow-none"
+                  className="my-8 inline-flex w-full min-w-[220px] select-none items-center justify-center rounded-medium bg-accent px-10 py-5 text-center text-base font-bold text-accent-foreground outline-none transition duration-300 hover:bg-accent-600"
                   href="#"
                 >
                   Get pre-approved
                 </a>
               </div>
-              <button className="rounded-base ease-universal disabled:text-interactiveForegroundMuted disabled:bg-interactiveMuted text-interactiveForegroundTertiary border-strokeBorder hover:text-interactivePrimary hover:shadow-accentBorderSecondary focus:shadow-accentBorderSecondary active:text-interactivePrimary px-xl h-3xl mt-lg flex w-full select-none items-center justify-center border border-solid bg-transparent text-center text-base font-bold outline-none transition duration-300 hover:border-transparent hover:shadow-[0_0_0_4px_inset] focus:border-transparent focus:shadow-[0_0_0_4px_inset] disabled:shadow-none">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-plus"
-                >
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5v14"></path>
-                </svg>
+              <button className="hidden w-full min-w-[220px] select-none items-center justify-center rounded-medium border border-divider px-10 py-5 text-center text-base font-bold text-foreground outline-none transition duration-300">
+                <Icon icon="material-symbols:add-2" className="mr-2" />
                 Add details
               </button>
               <div

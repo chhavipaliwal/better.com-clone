@@ -25,7 +25,39 @@ const config = {
           '900': '#002416',
           foreground: '#fff',
           DEFAULT: '#007848'
-        }
+        },
+        textPrimary: '#292B29',
+        infoSecondary: '#6E4CF6',
+        graph2Tertiary: '#8E8EEB',
+        graph3Tertiary: '#FE8B72',
+        graph4Tertiary: '#FFD567',
+        interactiveSecondary: '#E8EAE6'
+      },
+      spacing: {
+        'base': '16px',
+        'xs': '8px',
+        'sm': '12px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '32px',
+        '2xl': '40px',
+        '3xl': '48px',
+        '4xl': '80px',
+      },
+      borderRadius: {
+        'base': '8px',
+        'sm': '4px'
+      },
+      height: {
+        'base': '16px',
+        'xs': '8px'
+      },
+      fontSize: {
+        '3xl': '48px'
+      },
+      lineHeight: {
+        'heading': '1.2',
+        'body': '1.5'
       },
       keyframes: {
         'caret-blink': {
