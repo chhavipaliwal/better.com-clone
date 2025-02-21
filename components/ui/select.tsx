@@ -26,14 +26,14 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
       <div className="relative flex flex-col">
         <div className="relative">
           {startContent && (
-            <div className="absolute left-4 top-1/2 z-10 -translate-y-1/2">
+            <div className="absolute left-4 top-[60%] z-10 -translate-y-1/2">
               {startContent}
             </div>
           )}
           <select
             ref={ref}
             className={cn(
-              'w-full appearance-none px-4 py-5 font-bold',
+              'w-full appearance-none px-4 py-6 pb-3 font-bold',
               'rounded-small border border-foreground-200 transition-all hover:border-accent hover:shadow-[0_0_0_4px_inset] hover:shadow-accent focus:outline-none',
               startContent ? 'pl-8' : '',
               endContent ? 'pr-8' : '',
@@ -50,11 +50,11 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
             ))}
           </select>
           {endContent ? (
-            <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2">
+            <div className="pointer-events-none absolute right-4 top-[60%] -translate-y-1/2">
               {endContent}
             </div>
           ) : (
-            <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2">
+            <div className="pointer-events-none absolute right-4 top-[60%] -translate-y-1/2">
               <svg
                 width="24"
                 height="24"
@@ -70,9 +70,8 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
               className={cn(
                 'absolute left-4 transition-all duration-200',
                 isFocused || hasValue || startContent
-                  ? 'top-2 bg-white px-1 text-xs'
-                  : 'top-1/2 -translate-y-1/2 text-sm text-foreground-400',
-                isFocused ? 'text-accent' : ''
+                  ? 'top-2 px-1 text-xs'
+                  : 'top-1/2 -translate-y-1/2 text-sm text-foreground-400'
               )}
             >
               {label}
