@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 export default function Footer() {
   return (
     <>
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl px-4 md:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <h1 className="">
             <Logo className="text-accent" width="85px" height="25px" />

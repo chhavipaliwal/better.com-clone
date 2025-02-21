@@ -31,7 +31,7 @@ export default function Testimonials() {
           >
             See all our stories
           </a>
-          <div className="flex items-center justify-center md:justify-start">
+          <div className="mb-4 flex items-center justify-center md:justify-start">
             <Icon
               icon="material-symbols-light:star-rate"
               className="text-accent"

@@ -59,16 +59,161 @@ export default function CalculatorUsage() {
             the Census Bureau&apos;s 2021 American Community Survey 5-year
             estimate:
           </p>
+          <div className="my-3xl">
+            <div className="pointer group relative h-full w-full overflow-scroll">
+              <table className="clip-inset-round min-w-full table-auto border border-accent-100">
+                <thead className="">
+                  <tr>
+                    <th className="border bg-primary px-2 py-3 text-center text-primary-foreground md:px-4">
+                      <p className="leading-body text-textInversePrimary m-0 p-0 text-center text-sm font-bold">
+                        State
+                      </p>
+                    </th>
+                    <th className="border bg-primary px-2 py-3 text-center text-primary-foreground md:px-4">
+                      <p className="leading-body text-textInversePrimary m-0 p-0 text-center text-sm font-bold">
+                        Median Effective Property Tax Rate
+                      </p>
+                    </th>
+                    <th className="border bg-primary px-2 py-3 text-center text-primary-foreground md:px-4">
+                      <p className="leading-body text-textInversePrimary m-0 p-0 text-center text-sm font-bold">
+                        Mean Effective Property Tax Rate
+                      </p>
+                    </th>
+                    <th className="border bg-primary px-2 py-3 text-center text-primary-foreground md:px-4">
+                      <p className="leading-body text-textInversePrimary m-0 p-0 text-center text-sm font-bold">
+                        Median Home Value
+                      </p>
+                    </th>
+                    <th className="border bg-primary px-2 py-3 text-center text-primary-foreground md:px-4">
+                      <p className="leading-body text-textInversePrimary m-0 p-0 text-center text-sm font-bold">
+                        Median Property Taxes Paid
+                      </p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="even:bg-successBackground">
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        AL
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        0.41%
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        0.40%
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        $157,100
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        $646
+                      </p>
+                    </td>
+                  </tr>
+                  <tr className="even:bg-successBackground">
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        AK
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        1.23%
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        1.04%
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        $282,800
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        $3,464
+                      </p>
+                    </td>
+                  </tr>
+                  <tr className="even:bg-successBackground">
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        AZ
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        0.62%
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        0.63%
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        $265,600
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        $1,648
+                      </p>
+                    </td>
+                  </tr>
+                  <tr className="even:bg-successBackground">
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        AR
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        0.62%
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        0.64%
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        $142,100
+                      </p>
+                    </td>
+                    <td className="border border-accent-100 px-2 py-3 text-center md:px-4">
+                      <p className="leading-body text-textSecondary m-0 p-0 text-center text-sm font-normal">
+                        $878
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-        <hr className="my-4 mb-16 mt-16 border-t border-gray-400" />
+        <hr className="my-12 border-t border-divider" />
         <div className="mt-6 space-y-4">
-          <h1 className="text-3xl font-semibold">
+          <h2 className="text-textPrimary leading-heading m-0 w-auto p-0 text-xl font-bold tracking-normal md:text-2xl md:tracking-tight">
             How is Better&apos;s mortgage calculator different?
-          </h1>
-          <h2 className="text-2xl font-semibold">
+          </h2>
+          <h3 className="text-textPrimary leading-heading m-0 w-auto p-0 text-lg font-bold tracking-normal md:text-xl">
             This mortgage calculator shows your payments with taxes and
             insurance
-          </h2>
+          </h3>
           <p className="text-gray-500">
             The property taxes you contribute are used to finance the services
             provided by your local government to the community. These services
@@ -140,9 +285,9 @@ export default function CalculatorUsage() {
             expenses from time to time.
           </p>
         </div>
-        <hr className="my-4 mb-16 mt-16 border-t border-gray-400" />
+        <hr className="my-12 border-t border-divider" />
         <div className="space-y-6">
-          <h1 className="text-3xl font-semibold">
+          <h1 className="text-2xl font-semibold">
             How to reduce your monthly mortgage payments?
           </h1>
           <p className="text-gray-500">
@@ -212,9 +357,9 @@ export default function CalculatorUsage() {
             be more willing to offer a lower interest rate.
           </p>
         </div>
-        <hr className="my-4 mb-16 mt-16 border-t border-gray-400" />
+        <hr className="my-12 border-t border-divider" />
         <div className="space-y-6">
-          <h1 className="text-3xl font-semibold">
+          <h1 className="text-2xl font-semibold">
             How much home can I afford?
           </h1>
           <p className="text-gray-500">
@@ -228,9 +373,9 @@ export default function CalculatorUsage() {
             afford.
           </p>
         </div>
-        <hr className="my-4 mb-16 mt-16 border-t border-gray-400" />
+        <hr className="my-12 border-t border-divider" />
         <div className="space-y-6">
-          <h1 className="text-3xl font-semibold">
+          <h1 className="text-2xl font-semibold">
             Next steps to buying a house
           </h1>
           <p className="text-gray-500">
@@ -264,9 +409,9 @@ export default function CalculatorUsage() {
             costs, and save up to $8,200 on average over the life of your loan.
           </p>
         </div>
-        <hr className="my-4 mb-16 mt-16 border-t border-gray-400" />
+        <hr className="my-12 border-t border-divider" />
         <div className="space-y-10">
-          <h1 className="text-3xl font-semibold">More resources</h1>
+          <h1 className="text-2xl font-semibold">More resources</h1>
           <div>
             <div className="grid grid-cols-3 gap-12">
               <div className="flex flex-col gap-6 rounded-lg border border-gray-300 px-14 py-4">

@@ -9,9 +9,9 @@ export default function MortgageCalculator() {
   return (
     <CalculatorProvider>
       <Calculator />
-      <CalculatorUsage />
       <PaymentBreakdown />
       <MoreInfo />
+      <CalculatorUsage />
     </CalculatorProvider>
   );
 }
