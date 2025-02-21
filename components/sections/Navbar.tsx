@@ -316,7 +316,7 @@ const Navbar = ({ session }: { session: any }) => {
             </li>
             <li className="hidden transition-all duration-500 ease-in">
               <a
-                className="bg-graphTertiary text-interactiveForegroundInversePrimary hover:text-interactiveForegroundPrimary inline-flex h-8 w-auto items-center justify-center whitespace-nowrap rounded-full px-4 py-3 text-base font-bold leading-normal transition-all duration-200 ease-in-out hover:bg-primary disabled:pointer-events-none disabled:opacity-50 md:h-12 md:px-6"
+                className="inline-flex h-8 w-auto items-center justify-center whitespace-nowrap rounded-full px-4 py-3 text-base font-bold leading-normal transition-all duration-200 ease-in-out hover:bg-primary disabled:pointer-events-none disabled:opacity-50 md:h-12 md:px-6"
                 href="/start"
               >
                 Get started
@@ -324,7 +324,7 @@ const Navbar = ({ session }: { session: any }) => {
             </li>
             <li>
               <button
-                className="group-hover:bg-backgroundSecondary group-hover:text-textPrimary flex items-center font-normal text-primary-foreground transition-all duration-300 ease-in-out hover:bg-inherit hover:text-primary-foreground xl:hidden"
+                className="flex items-center font-normal text-primary-foreground transition-all duration-300 ease-in-out hover:bg-inherit hover:text-primary-foreground xl:hidden"
                 aria-label="open mobile nav bar"
               >
                 <svg

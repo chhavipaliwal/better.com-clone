@@ -75,7 +75,7 @@ export default function Timeline() {
                     : 'left-0 -translate-x-1/2'
                 } transform rounded-full bg-green-700 px-8 py-2 text-sm font-semibold text-white`}
               >
-                <h3 className="leading-heading m-0 w-auto p-0 text-lg font-bold tracking-normal text-white md:text-xl">
+                <h3 className="m-0 w-auto p-0 text-lg font-bold tracking-normal text-white md:text-xl">
                   {event.year}
                 </h3>
               </span>
