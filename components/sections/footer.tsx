@@ -81,7 +81,10 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="black hover:underline">
+                  <Link
+                    href="/mortgage-calculator"
+                    className="black hover:underline"
+                  >
                     Mortgage calculator
                   </Link>
                 </li>
@@ -136,13 +139,13 @@ export default function Footer() {
               <h3 className="mb-4 text-lg font-semibold">Company</h3>
               <ul className="space-y-4">
                 <li>
-                  <Link href="#" className="black hover:underline">
+                  <Link href="/about" className="black hover:underline">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="black hover:underline">
-                    Careers
+                  <Link href="/start" className="black hover:underline">
+                    Start
                   </Link>
                 </li>
                 <li>

@@ -69,7 +69,7 @@ export default function Start() {
           <p>Customers who chose a Better Mortgage</p>
         </div>
       </div>
-      <div className="mx-auto mt-16 flex w-full max-w-xl flex-col items-center rounded-lg bg-[#F0F7F1] p-4 text-center font-normal text-gray-500 shadow-sm">
+      <div className="mx-auto mb-32 mt-16 flex w-full max-w-xl flex-col items-center rounded-lg bg-[#F0F7F1] p-4 text-center font-normal text-gray-500 shadow-sm">
         <h3 className="mb-4">After a few questions, you'll unlock:</h3>
         <ul className="space-y-3">
           <li className="flex items-center gap-2">
