@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import Sonner from '@/components/providers';
-import Navbar from '@/components/sections/navbar';
+import Navbar from '@/components/sections/Navbar';
 import { Providers } from './providers';
 import { auth } from '@/auth';
 import Footer from '@/components/sections/footer';
