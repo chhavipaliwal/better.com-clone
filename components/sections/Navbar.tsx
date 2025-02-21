@@ -4,15 +4,31 @@ import { usePathname } from 'next/navigation';
 import { Link } from '@heroui/react';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import Logo from '../icons/logo';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, useScroll } from 'framer-motion';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [hasScrolled, setHasScrolled] = React.useState(false);
   const pathname = usePathname();
+  const { scrollY } = useScroll();
+  const isHomePage = pathname === '/';
+
+  React.useEffect(() => {
+    const updateScroll = () => {
+      const windowHeight =
+        typeof window !== 'undefined' ? window.innerHeight : 0;
+      setHasScrolled(scrollY.get() > windowHeight + 200);
+    };
+
+    const unsubscribe = scrollY.on('change', updateScroll);
+    return () => unsubscribe();
+  }, [scrollY]);
 
   const DISABLED_ROUTES = ['/start', '/auth'];
 
   if (DISABLED_ROUTES.includes(pathname)) return null;
+
+  const shouldShowWhiteBackground = !isHomePage || hasScrolled;
 
   const menuItems = [
     {
@@ -117,13 +133,23 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="sticky top-0 z-20 bg-primary text-primary-foreground transition-all duration-300 ease-in-out">
+      <header
+        className={`sticky top-0 z-20 transition-all duration-300 ease-in-out ${
+          shouldShowWhiteBackground
+            ? 'bg-white text-foreground'
+            : 'bg-primary text-primary-foreground'
+        }`}
+      >
         <nav className="m-auto flex max-w-screen-2xl justify-between p-5 md:px-10 md:py-5 xl:p-5">
           <div className="flex flex-row">
             <ul className="flex items-center">
               <li className="mr-2">
                 <Link
-                  className="group-hover:bg-backgroundSecondary group-hover:text-textPrimary font-normal text-primary-foreground transition-all duration-300 ease-in-out hover:bg-inherit hover:text-primary-foreground"
+                  className={`font-normal transition-all duration-300 ease-in-out hover:bg-inherit ${
+                    shouldShowWhiteBackground
+                      ? 'text-foreground'
+                      : 'text-primary-foreground'
+                  }`}
                   href="/"
                 >
                   <Logo />
@@ -133,7 +159,13 @@ const Navbar = () => {
                 <li className="mx-5 hidden xl:block" key={item.key}>
                   <div className="group relative">
                     <span className="">
-                      <button className="h-12 rounded-full px-4 py-1 font-normal text-primary-foreground transition-all duration-300 ease-in-out hover:bg-background hover:text-foreground group-hover:bg-background group-hover:text-foreground">
+                      <button
+                        className={`h-12 rounded-full px-4 py-1 font-normal transition-all duration-300 ease-in-out ${
+                          shouldShowWhiteBackground
+                            ? 'text-foreground hover:bg-default-100 group-hover:bg-default-100'
+                            : 'text-primary-foreground hover:bg-background hover:text-foreground group-hover:bg-background group-hover:text-foreground'
+                        }`}
+                      >
                         {item.label}
                       </button>
                     </span>
@@ -163,7 +195,13 @@ const Navbar = () => {
           <ul className="flex items-center gap-3 lg:gap-6">
             <li className="">
               <div className="group min-[520px]:relative">
-                <div className="rounded-full border p-2 transition-all duration-300 ease-in-out hover:text-foreground group-hover:border-background group-hover:bg-background group-hover:text-foreground md:p-3.5">
+                <div
+                  className={`rounded-full border p-2 transition-all duration-300 ease-in-out md:p-3.5 ${
+                    shouldShowWhiteBackground
+                      ? 'text-foreground hover:bg-default-100 group-hover:border-default-200 group-hover:bg-default-100'
+                      : 'text-primary-foreground hover:text-foreground group-hover:border-background group-hover:bg-background group-hover:text-foreground'
+                  }`}
+                >
                   <Icon icon="material-symbols:call" />
                 </div>
                 <div className="invisible absolute left-1 right-0 pt-2 group-hover:visible min-[520px]:left-auto">
@@ -181,7 +219,11 @@ const Navbar = () => {
             </li>
             <li className="hidden md:block">
               <a
-                className="inline-flex h-12 w-auto items-center justify-center whitespace-nowrap rounded-full bg-transparent px-4 py-5 text-base font-normal leading-normal text-primary-foreground transition-all duration-300 ease-in-out hover:bg-background hover:text-foreground disabled:pointer-events-none disabled:opacity-50 group-hover:bg-background group-hover:text-foreground"
+                className={`inline-flex h-12 w-auto items-center justify-center whitespace-nowrap rounded-full px-4 py-5 text-base font-normal leading-normal transition-all duration-300 ease-in-out disabled:pointer-events-none disabled:opacity-50 ${
+                  shouldShowWhiteBackground
+                    ? 'text-foreground hover:bg-default-100'
+                    : 'text-primary-foreground hover:bg-background hover:text-foreground group-hover:bg-background group-hover:text-foreground'
+                }`}
                 href="/account/sign-in"
               >
                 Sign in
@@ -189,7 +231,11 @@ const Navbar = () => {
             </li>
             <li>
               <button
-                className="flex items-center font-normal text-primary-foreground transition-all duration-300 ease-in-out hover:bg-inherit hover:text-primary-foreground xl:hidden"
+                className={`flex items-center font-normal transition-all duration-300 ease-in-out hover:bg-inherit xl:hidden ${
+                  shouldShowWhiteBackground
+                    ? 'text-foreground'
+                    : 'text-primary-foreground'
+                }`}
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 <Icon icon="material-symbols:menu-rounded" width={25} />

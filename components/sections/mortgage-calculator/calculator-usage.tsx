@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 
 export default function CalculatorUsage() {
   return (
-    <div className="mx-auto mb-12 mt-16 max-w-7xl">
+    <div className="mx-auto mb-12 mt-16 max-w-7xl px-4 md:px-0">
       <div className="">
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">
