@@ -1,6 +1,25 @@
+'use client';
+import Modal from '@/components/ui/modal';
+import { useState } from 'react';
+
 export default function Video() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div>
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        <div className="aspect-video">
+          <iframe
+            width="100%"
+            height="100%"
+            src={`https://www.youtube.com/embed/1KjYlLBM9j4?autoplay=1`}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </Modal>
       <div className="gap-y-base m-auto flex max-w-screen-xl flex-col-reverse gap-x-40 px-20 pb-32 md:flex-row md:px-20">
         <div className="md:w-1/2">
           <h2 className="text-3xl font-semibold md:text-3xl">
@@ -25,6 +44,44 @@ export default function Video() {
             className="w-full rounded-lg"
           />
         </div> */}
+        <div className="relative w-full md:w-1/2">
+          <button
+            style={{ height: '400px' }}
+            onClick={() => setIsModalOpen(true)}
+          >
+            <img
+              alt=""
+              loading="lazy"
+              width="1080"
+              height="800"
+              decoding="async"
+              data-nimg="1"
+              src="https://media.better.com/video/vishal-mission.jpg"
+              style={{
+                color: 'transparent',
+                height: '100%',
+                objectFit: 'cover',
+                width: '100%'
+              }}
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="80"
+              height="80"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="lucide lucide-circle-play absolute text-center"
+              style={{ left: '45%', top: '35%' }}
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="10 8 16 12 10 16 10 8"></polygon>
+            </svg>
+          </button>
+        </div>
       </div>
       <div className="bg-accent px-20 py-20">
         <div className="m-auto max-w-screen-lg">
