@@ -23,8 +23,8 @@ export default function Footer() {
                   <span className="font-normal text-[#A4A8A4]">Mortgage</span>
                 </h2>
                 <p className="black text-sm">
-                  We can't wait to say "Welcome home." Apply 100% online, with
-                  expert customer support.
+                  We can&apos;t wait to say &quot;Welcome home.&quot; Apply 100%
+                  online, with expert customer support.
                 </p>
               </div>
               <div>

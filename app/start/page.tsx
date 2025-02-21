@@ -34,7 +34,7 @@ export default function Start() {
       <div className="flex w-full max-w-2xl flex-col px-6">
         <div className="mt-12 flex flex-col items-center">
           <h2 className="mt-4 text-2xl font-semibold md:text-5xl">
-            Hi, I'm Betsy!
+            Hi, I&apos;m Betsy!
           </h2>
           <p className="mt-2 text-center text-2xl font-semibold md:text-5xl">
             What can I help you with?
@@ -82,7 +82,7 @@ export default function Start() {
           </div>
         </div>
         <div className="mx-auto mb-32 mt-16 flex w-full max-w-xl flex-col items-center rounded-lg bg-[#F0F7F1] p-4 text-center font-normal text-gray-500 shadow-sm">
-          <h3 className="mb-4">After a few questions, you'll unlock:</h3>
+          <h3 className="mb-4">After a few questions, you&apos;ll unlock:</h3>
           <ul className="space-y-3">
             <li className="flex items-center gap-2">
               <Icon

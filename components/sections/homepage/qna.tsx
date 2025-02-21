@@ -41,7 +41,7 @@ export default function Qna() {
             <h2 className="m-0 w-full max-w-lg p-0 text-3xl font-semibold tracking-tight md:text-2xl md:tracking-tight lg:text-5xl">
               Got questions?
               <br />
-              We've got answers
+              We&apos;ve got answers
             </h2>
             <div className="flex gap-3 overflow-x-scroll lg:gap-6 [&::-webkit-scrollbar]:hidden">
               {categories.map((category) => (
@@ -211,8 +211,8 @@ function Calculators() {
               Affordability calculator
             </h4>
             <p className="text-backgroundInversePrimary hidden flex-1 text-sm md:block md:flex-none">
-              Got homeownership dreams? Let's put some numbers behind them. Our
-              affordability calculator estimates the maximum home you can
+              Got homeownership dreams? Let&apos;s put some numbers behind them.
+              Our affordability calculator estimates the maximum home you can
               afford.
             </p>
             <div className="flex items-end justify-between">
@@ -343,8 +343,8 @@ function GuidesFaqs() {
               Timeline for homebuying process
             </h4>
             <p className="text-backgroundInversePrimary hidden flex-1 text-sm md:block md:flex-none">
-              Does the process of buying a home seem daunting? Don't stress, we
-              broke it down into 8 easy steps.
+              Does the process of buying a home seem daunting? Don&apos;t
+              stress, we broke it down into 8 easy steps.
             </p>
             <div className="flex items-end justify-between">
               <div className="rounded-full border border-foreground-200 p-2 text-primary transition-all duration-300 ease-in-out hover:border-primary hover:bg-primary hover:text-primary-foreground">

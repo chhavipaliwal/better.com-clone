@@ -24,16 +24,16 @@ export default function CalculatorUsage() {
               private mortgage insurance (PMI)
             </span>
             , costs will be added to your monthly mortgage payment. As the costs
-            of utilities can vary from county to county, we’ve included a
-            utilities estimate that you can break down by service. If you’re
-            thinking about buying a condo or into a community with a Homeowners
-            Association (HOA), you can add HOA fees.
+            of utilities can vary from county to county, we&apos;ve included a
+            utilities estimate that you can break down by service. If
+            you&apos;re thinking about buying a condo or into a community with a
+            Homeowners Association (HOA), you can add HOA fees.
           </p>
           <p className="text-gray-500">
-            The only amounts we haven’t included are the money you’ll need to
-            save for annual home maintenance/repairs or the costs of home
-            improvements. To see how much home you can afford including these
-            costs, take a look at the{' '}
+            The only amounts we haven&apos;t included are the money you&apos;ll
+            need to save for annual home maintenance/repairs or the costs of
+            home improvements. To see how much home you can afford including
+            these costs, take a look at the{' '}
             <span className="text-accent underline">
               Better home affordability calculator.
             </span>
@@ -225,17 +225,17 @@ export default function CalculatorUsage() {
           </p>
           <p className="text-gray-500">
             Your lender will usually require you to have homeowners insurance
-            while you're settling your mortgage. This is a common practice among
-            lenders because they understand that nobody wants to continue paying
-            a mortgage on a home that's been damaged or destroyed.
+            while you&apos;re settling your mortgage. This is a common practice
+            among lenders because they understand that nobody wants to continue
+            paying a mortgage on a home that&apos;s been damaged or destroyed.
           </p>
           <p className="text-gray-500">
-            Here's an interesting fact: Once you fully own your home, the choice
-            to maintain homeowners insurance is entirely up to you. However, to
-            ensure your home is protected against damages caused by fires,
-            lightning strikes, and natural disasters that are common in your
-            area, it is highly recommended to keep it. Therefore, always factor
-            in these costs when using a Mortgage Calculator.
+            Here&apos;s an interesting fact: Once you fully own your home, the
+            choice to maintain homeowners insurance is entirely up to you.
+            However, to ensure your home is protected against damages caused by
+            fires, lightning strikes, and natural disasters that are common in
+            your area, it is highly recommended to keep it. Therefore, always
+            factor in these costs when using a Mortgage Calculator.
           </p>
           <h2 className="text-2xl font-semibold">
             This mortgage calculator shows your mortgage costs with PMI
@@ -262,7 +262,7 @@ export default function CalculatorUsage() {
           <p className="text-gray-500">
             PMI is automatically removed from conventional mortgages once your
             home equity reaches 22%. Alternatively, you can request the removal
-            of PMI once you've accumulated at least 20% home equity.
+            of PMI once you&apos;ve accumulated at least 20% home equity.
           </p>
           <h2 className="text-2xl font-semibold">
             This mortgage calculator includes HOA fees
@@ -278,8 +278,8 @@ export default function CalculatorUsage() {
             Homes that share structural elements, such as roofs and walls, or
             community amenities like landscaping, pools, or BBQ areas, often
             require homeowners to pay HOA fees for the maintenance of these
-            shared features. It's important to factor in these costs during your
-            budget planning stage, especially considering that HOA fees
+            shared features. It&apos;s important to factor in these costs during
+            your budget planning stage, especially considering that HOA fees
             typically increase annually. HOAs may also charge additional fees
             known as &apos;special assessments&apos; to cover unexpected
             expenses from time to time.
